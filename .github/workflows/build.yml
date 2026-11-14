@@ -13,9 +13,9 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
         with:
-          gradle-version: '8.10'
+          gradle-version: '8.14'
       - name: Build with Gradle
-        run: gradle build --no-daemon --stacktrace
+        run: gradle build --no-daemon
       - name: Upload Mod
         uses: actions/upload-artifact@v4
         with:
